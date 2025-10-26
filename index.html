@@ -12,11 +12,16 @@
                 margin-top: 10px;
             }
         </style>
+
+        <script src="./script.js" type="text/javascript" defer></script>
     </head>
     <body>
         <h1>Welcome to Assignment 6, Exercise 1.</h1>
-        <label for="integer-input">Please insert an integer: </label>
-        <input type="text"> <br>
-        <button>Submit number</button>
+        <label for="insertion">Please insert an integer: </label>
+        <input id="insertion" type="number"> <br>
+        <button id="submission" 
+            onclick="printAllPrimes(document.querySelector('#insertion').value)">
+            Submit number
+        </button>
     </body>
 </html>
